@@ -1,0 +1,153 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.world-map {
+  max-width: 80%;
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.country-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.country-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+  border-color: #1e3a8a;
+}
+
+#country-detail {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.fact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.fact {
+  background: #e0f2fe;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+footer {
+  text-align: center;
+  background: #1e3a8a;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 20px;
+}
+.news-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.news-list li {
+  background: #f1f5f9;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, background 0.3s ,ease;
+}
+
+.news-list li:hover {
+  transform: translateX(5px);
+  background: #e0f2fe;
+}
+
+.news-date {
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.news-title {
+  flex: 1;
+  margin-left: 15px;
+}
+.load-more {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.load-more:hover {
+  background: #3b82f6;
+  transform: scale(1.05);
+}
+#news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

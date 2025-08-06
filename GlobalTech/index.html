@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Tech Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌐 Global Tech Explorer</h1>
+    <h2>Featured Countries</h2>
+
+    <nav>
+      <ul>
+        <li><a href="#map">Tech Map</a></li>
+        <li><a href="#countries">Countries</a></li>
+        <li><a href="#facts">Fun Facts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="news" class="section">
+  <h2>Latest Tech News</h2>
+  <ul id="newsList" class="news-list"></ul>
+  <button id="loadMoreBtn" class="load-more">Load More</button>
+</section>
+
+
+<main>
+    <!-- Tech Map -->
+    <section id="map" class="section">
+      <h2>Technology Hubs Around the World</h2>
+      <img src="assets/world-map.png" alt="World Map" class="world-map" />
+      <p>Hover over highlighted regions to learn more about tech centers.</p>
+    </section>
+
+    
+
+    <!-- Country Section -->
+    
+      <div class="country-grid">
+  <div class="country-card" onclick="showCountry('Japan')">
+    <h3>🇯🇵 Japan</h3>
+    <p>Innovation in robotics and gaming.</p>
+  </div>
+  <div class="country-card" onclick="showCountry('USA')">
+    <h3>🇺🇸 USA</h3>
+    <p>Silicon Valley and global tech giants.</p>
+  </div>
+  <div class="country-card" onclick="showCountry('Germany')">
+    <h3>🇩🇪 Germany</h3>
+    <p>Engineering and industrial technology.</p>
+  </div>
+  <div class="country-card" onclick="showCountry('South Korea')">
+    <h3>🇰🇷 South Korea</h3>
+    <p>Semiconductors and mobile tech.</p>
+  </div>
+  <div class="country-card" onclick="showCountry('China')">
+    <h3>🇨🇳 China</h3>
+    <p>AI and telecommunications growth.</p>
+  </div>
+  <div class="country-card" onclick="showCountry('India')">
+    <h3>🇮🇳 India</h3>
+    <p>Software development and IT services.</p>
+  </div>
+</div>
+
+
+      <!-- Country Detail -->
+      <div id="country-detail" class="hidden">
+        <h3 id="country-name"></h3>
+        <canvas id="techChart" width="400" height="200"></canvas>
+        <p id="country-info"></p>
+      </div>
+    </section>
+
+    <!-- Fun Facts -->
+    <section id="facts" class="section">
+  <h2>Did You Know?</h2>
+  <div class="fact-grid">
+    <div class="fact">💡 The first computer bug was a real moth!</div>
+    <div class="fact">🤖 Japan has over 300,000 industrial robots.</div>
+    <div class="fact">🌍 Over 5 billion people use the internet worldwide.</div>
+    <div class="fact">⚡ The world's fastest supercomputer is in Japan.</div>
+    <div class="fact">🛰️ Satellites now help improve global internet access.</div>
+    <div class="fact">🧠 AI can now compose music and write poetry.</div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>Created for academic purposes – Global Tech Explorer © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
